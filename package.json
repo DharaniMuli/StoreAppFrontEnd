@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "start": "node app.js",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "heroku-postbuild": "ng build",
     "lint": "ng lint",
+    "heroku-postbuild": "ng build",
+    "postinstall": "ng build --aot -prod",
     "e2e": "ng e2e"
   },
   "engines": {
